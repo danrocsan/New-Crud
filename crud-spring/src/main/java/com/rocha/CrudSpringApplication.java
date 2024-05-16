@@ -1,4 +1,4 @@
-package com.rocha.crudspring;
+package com.rocha;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
