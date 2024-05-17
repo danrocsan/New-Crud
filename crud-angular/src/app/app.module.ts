@@ -6,6 +6,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppMaterialModule } from './shared/app-material/app-material.module';
+import { MatTableModule } from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 @NgModule({
@@ -17,7 +22,9 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

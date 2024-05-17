@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { catchError, Observable, of } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/error-dialog.component';
-
+import { ActivatedRoute, Router } from '@angular/router';
 import { Course } from '../model/course';
 import { CoursesService } from '../services/courses.service';
 
@@ -17,12 +18,10 @@ export class CoursesComponent  implements OnInit{
 
   displayedColumns =['name', 'category'];
 
-  //coursesService: CoursesService;
-
-
-
   constructor(private coursesService: CoursesService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private router: Router,
+    private route: ActivatedRoute
   ){
 
     //this.coursesService =new CoursesService();
