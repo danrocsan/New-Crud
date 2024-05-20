@@ -16,12 +16,12 @@ export class CoursesComponent  implements OnInit{
 
   courses$: Observable <Course[]>;
 
-  displayedColumns =['name', 'category'];
+  displayedColumns =['name', 'category','actions'];
 
   constructor(private coursesService: CoursesService,
     public dialog: MatDialog,
-    private router: Router,
-    private route: ActivatedRoute
+    private router : Router,
+    private route : ActivatedRoute
   ){
 
     //this.coursesService =new CoursesService();
@@ -40,9 +40,15 @@ export class CoursesComponent  implements OnInit{
     });
   }
 
+  onAdd() {
+    this.router.navigate(['new'], {relativeTo: this.route});
+  }
+
 
   ngOnInit(): void {
 
   }
+
+
 
 }

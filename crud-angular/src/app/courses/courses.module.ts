@@ -7,6 +7,7 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { CourseFormComponent } from './course-form/course-form.component';
 
 
 
@@ -17,7 +18,8 @@ import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
-    CoursesComponent
+    CoursesComponent,
+    CourseFormComponent
   ],
   imports: [
     CommonModule,
