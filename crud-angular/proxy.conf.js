@@ -8,3 +8,5 @@ const PROXY_CONFIG = [
 ];
 
 module.exports = PROXY_CONFIG;
+
+//ng serve --host (ip onde ta rodando aplicacao)
